@@ -14,8 +14,16 @@
   'use strict';
 
   const blacklist = [
+    // techs
     'https://www.sejuku.net',
     'https://techacademy.jp',
+
+    // news
+    'https://news.yahoo.co.jp',
+
+    // alian
+    'https://www.instagram.com',
+    'https://www.tiktok.com',
   ];
 
   const elements = document.getElementsByClassName('g');
@@ -24,7 +32,6 @@
     const cite = target.querySelector("cite")
     if (cite == null) continue;
     blacklist.forEach((victim) => {
-      console.log(cite.textContent, victim)
       if (cite.textContent.includes(victim)) {
         const parent = target.parentElement;
         parent.removeChild(target)
