@@ -19,6 +19,16 @@
     'https://techacademy.jp',
     'https://nekoroblog.com',
     'https://プログラミングの始め方.com',
+    'https://miraiworks.org',
+    'https://tech-camp.in',
+    'https://itthestudy.com',
+    'https://codelearn.jp',
+    'https://stem-academykids.com',
+    'https://liskul.com',
+    'https://donachikiblog.com',
+    'https://www.furikatu.com',
+    'https://blog.codecamp.jp',
+    'http://www.c-lang.org',
 
     // news
     'https://news.yahoo.co.jp',
@@ -29,6 +39,8 @@
     // alian
     'https://www.instagram.com',
     'https://www.tiktok.com',
+
+    // spam
   ];
 
   const elements = document.getElementsByClassName('g');
