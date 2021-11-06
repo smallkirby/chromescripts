@@ -17,9 +17,14 @@
     // techs
     'https://www.sejuku.net',
     'https://techacademy.jp',
+    'https://nekoroblog.com',
+    'https://プログラミングの始め方.com',
 
     // news
     'https://news.yahoo.co.jp',
+
+    // misc
+    'https://detail.chiebukuro.yahoo.co.jp',
 
     // alian
     'https://www.instagram.com',
@@ -33,11 +38,14 @@
     if (cite == null) continue;
     blacklist.forEach((victim) => {
       if (cite.textContent.includes(victim)) {
-        const parent = target.parentElement;
-        parent.removeChild(target)
         deleted.push(target);
       }
     })
+  }
+
+  for (const target of deleted) {
+    const parent = target.parentElement;
+    parent.removeChild(target)
   }
 
   const parent = elements[0].parentElement.parentElement;
